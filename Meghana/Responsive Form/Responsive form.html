@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <h1>Responsive Form</h1>
+    <hr>
+    <form id="LoginForm" onsubmit="validate(event)">
+        <fieldset>
+
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" minlength="8">
+            </div>
+
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" min="12" max="50">
+            </div>
+
+            <button type="submit">Login</button>
+
+        </fieldset>
+    </form>
+    <div id="message"></div>
+</body>
+</html>
