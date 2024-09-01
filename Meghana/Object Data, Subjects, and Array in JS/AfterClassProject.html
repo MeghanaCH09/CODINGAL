@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>Object Data, Subjects, and Array in JS</h2>
+  <script>
+    var person = {
+      name: 'Meghana',
+      grade: '9',
+      hobbies: 'Drawing and Playing Tennis',
+      fav_color: 'blue'
+    };
+    
+    var colors = ["Red", "Blue", "Black", "Green", "Purple"];
+    
+    document.write("My name is: " + person.name, "<br>" + "My hobbies are: " + person.hobbies);
+    
+    document.write("<br>")
+    document.write("<br>")
+    
+    document.write("Before popping the colors are: " + colors.join("/"));
+    
+    document.write("<br>")
+    
+    document.write("My favorite color is: " + colors[1])
+    
+    document.write("<br>")
+    
+    colors.pop();
+    document.write("After poping the colors are: " + colors.join("*"))
+  </script>
+</body>
+
+</html>
