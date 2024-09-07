@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Class Inheritance</title>
+    </head>
+
+    <body>
+        <h1>Class Ineritance in JS</h1>
+        <p id="cardetails"></p>
+
+        <script>
+            class car {
+                constructor(brand){
+                    this.carbrand = brand;
+                }
+                present(){
+                    return "I have a " + this.carbrand;
+                }
+            }
+            class model extends car{
+                constructor(brand, model) {
+                    super(brand);
+                    this.model = model;
+                }
+                show() {
+                    return this.present() + ". It is a " + this.model + ".";
+                }
+            }
+            let mycar = new model("Volkswagen" , "Teremont");
+            document.getElementById("cardetails").innerHTML = mycar.show();
+        </script>
+    </body>
+</html>
