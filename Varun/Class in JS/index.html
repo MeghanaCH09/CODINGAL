@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student {
+          constructor (name, age) {
+            this.name = name
+            this. age = age
+          }
+          display()
+          {
+            document.write("My name is " + this.name + " and I am " + this.age + " years old. ")
+          }
+        }
+        obj = new student("Tina", 19)
+        obj.display()
+    
+  
+        class leader extends student {
+          constructor (name, age, GPA, university)
+          {
+            super(name, age)
+            this.GPA = GPA
+            this.university = university
+          }
+          display()
+          {
+            document.write("My name is" +this.name+ " and I am " +this.age+ " years old. I am stuying in " +this.university+ " and my GPA is " +this.GPA+ ".")
+            
+          }
+        }
+        obj = new student("Tina", 19)
+        obj.display()
+        document.write("<br>")
+        obj1 = new leader("Tina", 19, 3.6, "MIT")
+        obj1.display()
+      </script>
+</body>
+</html>
