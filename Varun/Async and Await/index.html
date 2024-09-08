@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 id="response"></h5>
+    <script>
+        async function add(v,m) {
+            let response = await v + m;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("response").innerHTML = some;
+        }
+        add(16,14)
+    </script>
+</body>
+</html>
