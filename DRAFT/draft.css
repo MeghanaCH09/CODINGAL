@@ -1,0 +1,22 @@
+
+body {
+    background: url('https://rckv.org/wp-content/uploads/2024/04/RCKV-Library-Rotary-International-President-Gordon-R.-McInally-RCKV-2024.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: 100%;
+  }
+  .logo{
+    width: 170px;
+    height: 100px;
+    margin-left: 30px;
+  }
+  #name{
+    color: whitesmoke;
+  }
+  #name{
+    padding-top: 0px;
+    padding-left: 27px;
+    text-decoration-line: underline;
+    font-size: 20px;
+  }

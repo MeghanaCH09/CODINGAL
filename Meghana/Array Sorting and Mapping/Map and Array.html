@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Map And Array</title>
+    </head>
+
+    <body>
+        <h1>Map and Array</h1>
+        <p>Multiply all the numbers with 10</p>
+        <p id="result"></p>
+
+        <script>
+            var numbers = [20, 56, 70, 33];
+
+            function myfunction(num){
+                return num * 10;
+            }
+
+            var newarray = numbers.map(myfunction);
+            document.getElementById("result").innerHTML = newarray;
+        </script>
+    </body>
+</html>

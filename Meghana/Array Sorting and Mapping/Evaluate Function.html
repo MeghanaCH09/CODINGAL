@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Evaluation Function</title>
+    </head>
+
+    <body>
+        <h1>Evaluation Function</h1>
+        <p>Click the button to evaluate the code</p>
+        <button onclick="myfunction()">Click!</button>
+        <p id="result"></p>
+
+        <script>
+            function myfunction() {
+                var x = 10;
+                var y = 30;
+                var a = eval("x+y") + "<br>";
+                var b = eval("2*3") + "<br>";
+                var c = eval("y-x") + "<br>";
+
+                var z = a + b + c;
+                document.getElementById("result").innerHTML = z;
+            }
+        </script>
+    </body>
+</html>
