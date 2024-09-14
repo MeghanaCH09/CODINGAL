@@ -8,7 +8,7 @@
         <p>Click the button to sort the nunmbers</p>
         <p id="originalarray"></p>
         <button onclick="ascending()">Ascending Order</button>
-        <!--<button onclick="descending()">Descending Order</button>-->
+        <button onclick="descending()">Descending Order</button>
             <p id="result"></p>
 
             <script>
@@ -18,10 +18,10 @@
                         points.sort(function (a, b) { return a - b });
                         document.getElementById("result").innerHTML = points;
                     }
-            /*function descending() {
+            function descending() {
                 points.sort(function (a,b) {return b-a});
                 document.getElementById("result").innerHTML = points;
-            }*/
+            }
             </script>
     </body>
 </html>
