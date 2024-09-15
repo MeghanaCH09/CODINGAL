@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Enter a number between 100 to 300 and click the "OK!" button</p>
+    <input id="id4"  type= "number" min="100" max="300" required>
+    <button onclick="myFunction()">OK!</button>    
+    <p id="result"></p>
+
+    <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id4");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("result").innerHTML = inpObj.validationMessage
+            }
+                
+                else {
+                    document.getElementById("result").innerHTML = "Input OK!"
+                }
+            }
+    </script>
+</body>
+</html>
