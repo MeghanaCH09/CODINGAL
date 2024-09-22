@@ -1,24 +1,67 @@
-body{
-    background-color: rgb(130, 68, 206);
-    background-image: url("tennis.jpg");
-    background-image: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
+html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url("HD-wallpaper-painting-art-gallery-cloud.jpg");
+    background-size: 1400px;
+    width: 1000;
+    height: 500px;
 }
-.navigation-link{
+#name{
+    font-size: 25px;
+    text-align: left;
+    display: inline-block;
+}
+.navbar {
+    color: white;
+    font-family: Lucida Console, Monaco, Monospace;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+}
+
+a:link {
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
     color: black;
-    text-decoration: none;
+    background-color: white;
 }
-.navigation-link:hover{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(177, 177, 0);
+
+a:visited {
+    background-color: #FEFAF6;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+
 }
-.new-container{
+
+.bold {
+    text-shadow: 5px 5px 5px lightblue;
+    font-size: 33px;
+}
+
+
+.main-container {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+#text1{
+    color: white;
+    font-family: system-ui;
+    padding-top: 60px;
+    padding-left: 545px;
+    font-size: 28px;
+    text-shadow: 4px 4px 4px black;
+}
+#text2{
+    color: white;
+    font-family: system-ui;
+    padding-top: 10px;
+    padding-left: 490px;
+    font-size: 28px;
+    text-shadow: 4px 4px 4px black;
 }
