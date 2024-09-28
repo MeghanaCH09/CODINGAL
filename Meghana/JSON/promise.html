@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Async</title>
+</head>
+<body>
+    <h1>JSON Async</h1>
+    <p id="result"></p>
+    <script>
+        function add(a,b){
+            let response= a+b;
+            display(response);
+        }
+        function display(some){
+            document.getElementById("result").innerHTML=some;
+        }
+        let myPromise = new Promise(function(myResolve,myReject)
+        {
+            let x=0;
+            if(x==0)
+        {
+            myResolve("0k")
+        }
+        else{
+            myReject("Error")
+        }
+        }
+    );
+    myPromise.then(
+        function(value){add(10,30)},
+        function(error){add(error)}
+    )
+    </script>
+</body>
+</html>
