@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS async and await</title>
+</head>
+<body>
+    <h1>JavaScript async and await</h1>
+    <h4 id="result"></h4>
+    <script>
+        async function product(a,b) {
+            let response = await a*b;
+            display(response);
+        }
+        function display(some){
+            document.getElementById("result").innerHTML = some;
+        }
+        product(5,8)
+    </script>
+</body>
+</html>
