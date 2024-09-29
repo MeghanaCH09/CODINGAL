@@ -77,16 +77,6 @@ a:visited {
 .reservation{
     color: rgb(239, 148, 148);
 }
-}
-#reservationOpening{
-    text-align: center;
-    color: black;
-    background-color: rgb(246, 246, 251);
-    height: 200px;
-    width: 300px;
-    border-radius: 25px;
-    margin-left: 100px;
-}
 .container-fluid {
     background-color: rgb(255, 148, 148);
 }
