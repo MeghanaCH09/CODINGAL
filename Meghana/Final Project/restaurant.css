@@ -63,12 +63,13 @@ a:visited {
     background-color: rgb(246, 246, 251);
     height: 330px;
     width: 350px;
-    margin-left: 30px;
     border-radius: 25px;
+    margin-left: 450px;
 }
 #abt{
-    padding-left: 140px;
+    padding-left: 560px;
     color: rgb(239, 148, 148);
+    text-shadow: 3px 2px 2px purple;
 }
 #button{
     background-color: rgb(237, 105, 105);
@@ -76,11 +77,89 @@ a:visited {
 .reservation{
     color: rgb(239, 148, 148);
 }
-reservationdetail{
+}
+#reservationOpening{
     text-align: center;
     color: black;
-    background-color: aliceblue;
-    height: 330px;
-    width: 200px;
-    margin-left: 400px;
+    background-color: rgb(246, 246, 251);
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+.container-fluid {
+    background-color: rgb(255, 148, 148);
+}
+#titles{
+    text-align: center;
+}
+#link1 {
+    padding-left: 18px;
+    border: 2px solid black;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    color: red;
+}
+
+#link1:hover {
+    text-decoration: underline;
+}
+#link2 {
+    padding-left: 18px;
+    border: 2px solid black;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    color: rgb(254, 254, 61);
+}
+
+#link2:hover {
+    text-decoration: underline;
+}
+#link3 {
+    padding-left: 18px;
+    border: 2px solid black;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    color: blue;
+}
+
+#link3:hover {
+    text-decoration: underline;
+}
+#link4 {
+    padding-left: 18px;
+    border: 2px solid black;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    color: rgb(92, 134, 134);
+}
+
+#link4:hover {
+    text-decoration: underline;
+}
+
+.container-fluid-new {
+    background-color: rgb(55, 47, 47);
+    text-align: center;
+    text-decoration: none;
+    height: 7rem;
+}
+
+#rights {
+    text-decoration: none;
+    color: rgb(255, 223, 64);
+    opacity: 0.5;
+}
+
+#rights:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+#copy{
+    color: grey;
 }
