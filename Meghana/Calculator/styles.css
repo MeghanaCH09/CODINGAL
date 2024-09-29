@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(159, 159, 249);
+}
+hr{
+    border: 1px solid black;
+    background-color: black;
+}
+.container{
+    width: 350px;
+    height: 500px;
+    margin: 15px auto;
+}
+.calculator{
+    text-align: center;
+    width: 250px;
+    height: 315px;
+    padding-top: 110px;
+    background-color: grey;
+    box-shadow: 5px 8px black;
+    margin: auto;
+    border-radius: 20px;
+}
+.keyboard{
+    height: 450px;
+}
+.operator, .number, .empty{
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+    border-radius: 50%; 
+    font-weight: bold;
+    background-color: rgb(136, 222, 222);
+    box-shadow: 1px 1.5px white;
+}
