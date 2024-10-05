@@ -1,0 +1,11 @@
+body{
+    background-image: url("background-for-calculator.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+#keyboard{
+    border: 2px solid white;
+    border-width: 300px;
+    border-top: 200px;
+}
