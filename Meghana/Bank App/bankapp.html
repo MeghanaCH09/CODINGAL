@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <style>
+        #loginpage {
+            text-align: center;
+            width: 300px;
+            height: 160px;
+            margin-left: 130px;
+            border: 2px solid black;
+        }
+
+        #loginbtn {
+            width: 150px;
+            height: 25px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #accountpage {
+            text-align: center;
+            width: 320px;
+            height: 260px;
+            margin-left: 130px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="loginpage">
+        <h3>BANK Login</h3>
+        <p>Enter Your Username:</p>
+        <input type="text" id="InputUsername" placeholder="Username">
+        <br><br>
+        <button onclick="login()" id="loginbtn">Login</button>
+    </div>
+
+    <div class="container hidden" id="accountpage">
+        <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+        <p>Your current balance is <b>$<span id="balance">0</span></b></p>
+
+        <h4>Manage Money</h4>
+        <input type="number" id="transactioninput" placeholder="Amount"><br><br>
+        <button onclick="CreditMoney()">Credit Money</button>
+        <button onclick="DebitMoney()">Debit Money</button><br><br>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        let balance = 0;
+
+        function login() {
+            const username = document.getElementById("InputUsername").value;
+            if (username) {
+                document.getElementById('loginpage').classList.add('hidden');
+                document.getElementById('accountpage').classList.remove('hidden');
+                document.getElementById('usernameDisplay').textContent = username;
+            } else {
+                alert("Please enter a valid username.")
+            }
+        }
+
+        function logout() {
+            balance = 0;
+            document.getElementById("balance").textContent = 0;
+            document.getElementById("usernameDisplay").value = '';
+            document.getElementById("loginpage").classList.remove("hidden");
+            document.getElementById("accountpage").classList.add("hidden");
+         }
+    </script>
+</body>
+
+</html>
