@@ -78,7 +78,7 @@ a:visited {
     color: rgb(239, 148, 148);
 }
 .container-fluid {
-    background-color: rgb(255, 148, 148);
+    background-color: rgb(242, 183, 134);
 }
 #titles{
     text-align: center;
@@ -152,4 +152,118 @@ a:visited {
 
 #copy{
     color: grey;
+}
+#footer{
+    background-color: rgb(95, 92, 92);
+}
+#contact{
+    text-align: center;
+    font-size: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h5 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu-card-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+    text-align: center;
+    color: #333;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-section h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none; 
+}
+
+.item-image {
+    width: 80px;
+    height: auto; 
+    margin-right: 15px;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-name {
+    color: #333;
+}
+
+.item-price {
+    color: #888;
 }
