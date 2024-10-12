@@ -13,8 +13,8 @@ hr{
 .calculator{
     text-align: center;
     width: 250px;
-    height: 315px;
-    padding-top: 110px;
+    height: 400px;
+    padding-top: 10px;
     background-color: grey;
     box-shadow: 5px 8px black;
     margin: auto;
@@ -31,4 +31,25 @@ hr{
     font-weight: bold;
     background-color: rgb(136, 222, 222);
     box-shadow: 1px 1.5px white;
+}
+#Clear{
+    background-color: rgb(246, 66, 66);
+}
+#Backspace{
+    background-color: rgb(226, 115, 226);
+}
+.operator{
+    background-color: rgb(148, 148, 238);
+}
+#display{
+    background-color: black;
+    padding: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: px;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+    font-family: "Courier New", "Monospace";
 }

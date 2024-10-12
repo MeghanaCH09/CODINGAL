@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practise: </title>
+</head>
+<body>
+    <p> Click on the button to get the result: </p>
+
+    <button onclick="Varun(44)"> Click this button! </button>
+    <h3 id="text"></h3>
+    <script>
+      function Varun(x , y){
+        if (y == undefined){
+          y=34;
+        }
+        document.getElementById("text").innerHTML = x * y;
+      }        
+    </script>
+
+    <h2 id="error_message"></h2>
+    <script>
+        try{
+            addalert("Error?");
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message
+        }
+    </script>
+</body>
+</html>

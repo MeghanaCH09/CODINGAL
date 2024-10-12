@@ -13,6 +13,25 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
+        <script>
+          function validateForm() {
+              var x = document.forms["myform"]["fname"].value
+              if (x=="") {
+                  alert("Enter a valid number");
+                  return false;
+              }
+              else document.write("Successfully completed");
+          }
+  </script>
+  
+          <form name="myform" onsubmit="validateForm()">
+              Enter transaction amount: <input type="text" name="fname">
+              <br>
+              <input type="submit" value="credit">
+              <input type="submit" value="debit">
+              <p id="message"></p>
+              
+              <p> Your account balance is: 1,000,000Rs</p>
 </body>
 </html>

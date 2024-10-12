@@ -12,31 +12,64 @@
     <h1>Calculator</h1>
     <div class="container">
         <div class="calculator">
+            <div id="display" class="display">0</div>
             <div class="keyboard">
                 <hr>
-                <button class="operator" id="Clear">C</button>
-                <button class="operator" id="Backspace">CE</button>
-                <button class="operator" id="%">%</button>
-                <button class="operator" id="&#247;">&#247;</button>
-                <button class="number" id="7">7</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="8">9</button>
-                <button class="operator" id="&times;">&times;</button>
-                <button class="number" id="4">4</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="6">6</button>
-                <button class="operator" id="-">-</button>
-                <button class="number" id="1">1</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id="3">3</button>
-                <button class="operator" id="+">+</button>
-                <button class="number" id="0">0</button>
-                <button class="number" id="00">00</button>
-                <button class="operator" id=".">.</button>
-                <button class="operator" id="=">=</button>
+                <button class="operator" id="Clear" onclick="ClearAll('C')">C</button>
+                <button class="operator" id="Backspace" onclick="DeleteLast('CE')">CE</button>
+                <button class="operator" id="%" onclick="AppenToDisplay('%')">%</button>
+                <button class="operator" id="&#247;" onclick="AppenToDisplay('/')">&#247;</button>
+                <button class="number" id="7" onclick="AppenToDisplay('7')">7</button>
+                <button class="number" id="8" onclick="AppenToDisplay('8')">8</button>
+                <button class="number" id="9" onclick="AppenToDisplay('9')">9</button>
+                <button class="operator" id="&times;" onclick="AppenToDisplay('*')">&times;</button>
+                <button class="number" id="4" onclick="AppenToDisplay('4')">4</button>
+                <button class="number" id="5" onclick="AppenToDisplay('5')">5</button>
+                <button class="number" id="6" onclick="AppenToDisplay('6')">6</button>
+                <button class="operator" id="-" onclick="AppenToDisplay('-')">-</button>
+                <button class="number" id="1" onclick="AppenToDisplay('1')">1</button>
+                <button class="number" id="2" onclick="AppenToDisplay('2')">2</button>
+                <button class="number" id="3" onclick="AppenToDisplay('3')">3</button>
+                <button class="operator" id="+" onclick="AppenToDisplay('+')">+</button>
+                <button class="number" id="0" onclick="AppenToDisplay('0')">0</button>
+                <button class="number" id="00" onclick="AppenToDisplay('00')">00</button>
+                <button class="operator" id="." onclick="AppenToDisplay('.')">.</button>
+                <button class="operator" id="=" onclick="Calculate()">=</button>
             </div>
         </div>
     </div>
+
+    <script>
+        const display = document.getElementById("display");
+
+        function ClearAll(){
+            display.innerText = "0";
+        }
+
+        function DeleteLast(){
+            if(display.innerText.length > 1) {
+                display.innerText = display.innerText.slice(0, -1)
+            } else{
+                display.innerText = "0";
+            }
+        }
+
+        function AppenToDisplay(value){
+            if(display.innerText === "0" && value !== "."){
+                display.innerText  = value;
+            } else{
+                display.innerText += value;
+            }
+        }
+
+        function Calculate() {
+            try{
+                display.innerText = eval(display.innerText);
+            } catch{
+                display.innerText = "Error";
+            }
+        }
+    </script>
 </body>
 
 </html>
