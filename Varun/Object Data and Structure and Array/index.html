@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "John",
+            age: 25, 
+            occupation: "Engineer"
+        };
+
+        console.log("Name: " + person.name);
+        console.log("Age: " + person.age);
+        console.log("Occupation: " + person.occupation);
+
+        let hobbies = ["Reading", "Traveling", "Gaming", "Swimming"];
+
+        console.log("First Hobby: " + hobbies[0]);
+        console.log("Second Hobby: " + hobbies[1]);
+
+        consle.log("Hobbies (Joined): " hobbies.join(", "));
+
+        hobbies.pop();
+        console.log("Hobbies after pop: " + hobbies.join(","));
+    </script>
+</body>
+</html>
