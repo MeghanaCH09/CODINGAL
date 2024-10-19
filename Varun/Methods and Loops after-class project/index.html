@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getRandomNumbers(min, max) {
+            return Math.round() * (max - min ) + min;
+        }
+
+        console.log("Random set of numbers:");
+        for (let i = 0; i < 5; i++) {
+            console.log(getRandomNumbers(1, 100).toFixed(2));
+        }
+
+        let currentData = new Data();
+        console.log("\nCurrent Data");
+        console.log(currentDate.toDatString());
+
+        let RandomNum = getRandomNumber(1, 100);
+        let roundedRandomNum = Math.round(randomNum);
+        console.log("\nRounded Random Number;");
+        console.log(roundedRandomNum);
+
+        switch (true) {
+            case (roundedRandomNum <=25):
+            console.log("The number is in the low range (1-25).");
+                break;
+
+            case (roundedRandomNum <= 50):
+                console.log("The numebr is in the mid-low range (26-50).");
+                break;
+            
+            case (roundedRandomNum <= 75):
+                console.log("The number is in the mid-high range (51-75).");
+                break;
+
+            default:
+                console.log("The numebr is in the high range (76-100).");
+                break;
+        }
+    </script>
+</body>
+</html>
