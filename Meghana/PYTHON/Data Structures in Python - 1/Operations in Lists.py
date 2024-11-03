@@ -16,3 +16,6 @@ fruit.reverse()
 print(fruit)
 fruit[0:4]
 print(fruit)
+
+fruit.clear()
+print(fruit)
