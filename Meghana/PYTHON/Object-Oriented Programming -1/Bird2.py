@@ -1,6 +1,5 @@
 class animal:
     
-
     def __init__(self,type,place):
          self.type=type
          self.place=place
