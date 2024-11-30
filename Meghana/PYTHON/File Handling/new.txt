@@ -1,0 +1,5 @@
+I am now in write mode...
+I have added a text using the write mode
+
+I am now in the append mode
+I have added a text using the append mode
